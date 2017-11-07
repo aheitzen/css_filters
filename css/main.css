@@ -1,0 +1,33 @@
+html, body {
+	background-color: black;
+	margin: 0;
+}
+
+.grid { 
+  	display: grid;
+  	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.grid img {
+	height: 500px;
+  	max-width: 100%;
+}
+
+img#blur:hover {
+	filter: blur(10px);
+	cursor: pointer;
+}
+
+img#contrast:hover {
+	cursor: pointer;
+	filter: saturate(50%);
+}
+
+img#brightness:hover {
+	cursor: pointer;
+	filter: sepia(90%);
+}
+
+img#greyscale:hover {
+	cursor: pointer;
+	filter: grayscale(100%);
+}
